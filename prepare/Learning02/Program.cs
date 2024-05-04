@@ -20,7 +20,7 @@ class Program
         job1.Display();
         job2.Display();
 
-        Resume myResume = new Resume();
+        NewResume myResume = new NewResume();
         myResume._name = "Bryn Rounds";
 
         myResume._jobs.Add(job1);
@@ -29,4 +29,8 @@ class Program
         myResume.Display();
 
     }
+}
+
+internal class Resume
+{
 }
