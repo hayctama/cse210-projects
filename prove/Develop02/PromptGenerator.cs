@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 
-public class GeneratePrompt
+public class PromptGenerator
 {
         public List<string> _prompts = new List<string>
         {
@@ -12,6 +12,8 @@ public class GeneratePrompt
             "What is one thing you love about yourself?",
             "Tell me something that made you smile today:",
         };
+
+
     public string GetRandomPrompt()
         { // get random index value and lookup the string in _prompts
         Random rnd = new Random();
