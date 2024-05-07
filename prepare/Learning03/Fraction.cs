@@ -14,26 +14,25 @@ public class Fraction
 
     public Fraction(int wholeNumber)
     {
-        wholeNumber = 6;
+        _top = wholeNumber;
         _bottom = 1;
     }
     public Fraction(int top, int bottom)
 
     {
-        top = 6;
-        bottom = 7;
+        _top = top;
+        _bottom = bottom;
     }
 
-    // public Fraction(int wholeNumber)
-    // {
-    //     _top = wholeNumber;
-    //     _bottom = 1;
-    // }
+    public string GetFractionString()
+    {
+        string text = $"{_top}/{_bottom}";
+        return text;
+    }
 
-    // public Fraction(int top, int bottom)
-    // {
-    //     _top = top;
-    //     _bottom = bottom;
-    // }
+    public double GetDecimalValue()
+    {
+        return (double)_top / (double)_bottom;
+    }
 
 }
