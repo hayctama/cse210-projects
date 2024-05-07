@@ -5,7 +5,7 @@ public class Reference
     private string _book;
     private int _chapter;
     private int _verse;
-    private int _endVerse;
+    private Nullable<int> _endVerse;
 
     public Reference(string book, int chapter, int verse)
     {
@@ -27,12 +27,12 @@ public class Reference
         if (_endVerse == null)
         {
             string referenceDisplay = $"{_book} {_chapter} : {_verse}";
+            return referenceDisplay;
         }
         else
         {
             string referenceDisplay = $"{_book} {_chapter} : {_verse} {_endVerse}";
+            return referenceDisplay;
         }
-
-        return referenceDisplay;
     }
 }
